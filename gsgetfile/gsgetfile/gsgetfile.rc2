@@ -1,0 +1,46 @@
+//
+// gsgetfilePPC.RC2 - Microsoft Visual C++ で直接編集しないリソース
+//
+
+#ifdef APSTUDIO_INVOKED
+#error このファイルは、Microsoft Visual C++ で編集できません。
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 手動で編集されたリソースをここに追加します...
+
+/////////////////////////////////////////////////////////////////////////////
+//HI_RES_AWARE CEUX {1}	// エミュレーション層をオフにします
+//			// pixel-doubling をサポートするプラットフォームで-
+//			// 有効にするために、このリソースを削除します
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHMENUBAR
+//
+
+IDR_MAIN_MULTI SHMENUBAR DISCARDABLE
+BEGIN
+    IDR_MAIN_MULTI, 
+    2,
+
+    I_IMAGENONE, ID_UP, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE,
+    IDS_UP, 0, NOMENU,
+    
+    I_IMAGENONE, ID_MENU, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE,
+    IDS_MENU, 0, 1,
+END
+
+IDR_MAIN_SINGLE SHMENUBAR DISCARDABLE
+BEGIN
+    IDR_MAIN_SINGLE, 
+    2,
+
+    I_IMAGENONE, ID_UP, TBSTATE_ENABLED, TBSTYLE_BUTTON | TBSTYLE_AUTOSIZE,
+    IDS_UP, 0, NOMENU,
+    
+    I_IMAGENONE, ID_MENU, TBSTATE_ENABLED, TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE,
+    IDS_MENU, 0, 1,
+END

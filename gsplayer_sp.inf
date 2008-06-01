@@ -1,0 +1,42 @@
+; GSPlayer for Pocket PC AppInstall CabWiz INF file
+; Copyright(C) 2004-2008 Y.Nagamidori
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = "GreenSoftware"
+CESignature = "$Windows CE$"
+
+[CEStrings]
+AppName     = "GSPlayer"
+InstallDir  = %CE1%\GreenSoftware
+
+[Platform]
+PlatformString=Smartphone
+PlatformMin=4.0
+
+[SourceDisksNames]
+1 = ,"ARM",,ARMV4Rel
+
+[SourceDisksFiles]
+GSPlayer2.exe = 1
+GSPlayer2.exe.0411.mui = 1
+gsgetfile.dll = 1
+gsgetfile.dll.0411.mui = 1
+
+[DefaultInstall]
+CopyFiles   = CopyToInstallDir
+CEShortcuts = CreateShortcuts
+
+[DestinationDirs]
+CopyToInstallDir = ,%InstallDir%
+DefaultDestDir   = ,%InstallDir%
+
+
+[CopyToInstallDir]
+GSPlayer2.exe, GSPlayer2.exe,,0x40000000
+GSPlayer2.exe.0411.mui, GSPlayer2.exe.0411.mui,,0x40000000
+gsgetfile.dll, gsgetfile.dll,,0x40000000
+gsgetfile.dll.0411.mui, gsgetfile.dll.0411.mui,,0x40000000
+
+[CreateShortcuts]
+GSPlayer,0,GSPlayer2.exe,%CE11%

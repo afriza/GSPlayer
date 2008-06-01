@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resdefce.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resdefce.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""gsgetfile.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (米国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPENFILEDLG_PPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 135
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_OPENFILEDLG_SP, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 135
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPENFILEDLG_PPC DIALOG  0, 0, 138, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "Open"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Open",IDC_TITLE,3,4,89,8
+    LTEXT           "Name: ",IDC_STATIC,3,22,27,8
+    EDITTEXT        IDC_EDIT_NAME,30,20,105,14,ES_AUTOHSCROLL
+    LTEXT           "Type:",IDC_STATIC,3,39,27,8
+    COMBOBOX        IDC_COMBO_FILTER,30,37,105,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Current Directory",IDC_STATIC_CURRENT_TEXT,3,55,132,10
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,0,67,135,109
+END
+
+IDD_OPENFILEDLG_SP DIALOG  0, 0, 138, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "Open"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Name: ",IDC_STATIC,3,5,27,8
+    EDITTEXT        IDC_EDIT_NAME,30,2,105,14,ES_AUTOHSCROLL
+    LTEXT           "Type:",IDC_STATIC,3,21,27,8
+    LISTBOX         IDC_LIST_FILTER,30,19,105,12,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SPIN_FILTER,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_HORZ | 0x200,113,162,22,14
+    LTEXT           "Current Directory",IDC_STATIC_CURRENT_TEXT,3,37,132,10
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,0,49,135,109
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MULTI MENU 
+BEGIN
+    MENUITEM "Up",                          ID_UP
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "OK",                          IDOK
+        MENUITEM SEPARATOR
+        MENUITEM "Small Icon",                  ID_LIST_STYLE_LIST
+        MENUITEM "Detail",                      ID_LIST_STYLE_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Selection Mode",              ID_KEY_CTRL
+        MENUITEM "Select All",                  ID_LIST_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Cancel",                      IDCANCEL
+    END
+END
+
+IDR_MAIN_SINGLE MENU 
+BEGIN
+    MENUITEM "Up",                          ID_UP
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "OK",                          IDOK
+        MENUITEM SEPARATOR
+        MENUITEM "Small Icon",                  ID_LIST_STYLE_LIST
+        MENUITEM "Detail",                      ID_LIST_STYLE_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Cancel",                      IDCANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Open...   "
+    IDS_OPEN_TITLE          "Open"
+    IDS_SAVE_TITLE          "Save as"
+    IDS_OPEN_TITLE_PPC      "Open"
+    IDS_SAVE_TITLE_PPC      "Save"
+    IDS_DEF_FILTER          "All Files (*.*)"
+    IDS_DEF_EXT             "*.*"
+    IDS_COLUMN_NAME         "Name"
+    IDS_COLUMN_SIZE         "Size"
+    IDS_COLUMN_TYPE         "Type"
+    IDS_COLUMN_DATE         "Update Time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEF_DIR             "\\My Documents"
+    IDS_DEF_ROOT_NAME       "My Device"
+    IDS_MSG_OVERWRITE_PROMPT 
+                            "\nThis file already exists.\nReplace existing file?"
+    IDS_MSG_PATH_MUST_EXIST "\nPath does not exist.\nPlease verify that the correct path is given."
+    IDS_MSG_CREATE_PROMPT   "\nThis file does not exist.\nCreate the file?"
+    IDS_MSG_FILE_MUST_EXIST "\nCannot find this file.\nPlease verify that the correct path and filename are given."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UP                  "Up"
+    IDS_MENU                "Menu"
+END
+
+#endif    // 英語 (米国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "gsgetfile.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
